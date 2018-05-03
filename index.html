@@ -3,10 +3,10 @@ layout: default
 ---
 
 <ul>
-    {% for post in site.posts %}
+    {% for page in page.posts %}
 
-    <li>{{ post.date | date_to_string }}
-        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+    <li>{{ page.date | date_to_string }}
+        <a href="{{ site.baseurl }}{{ post.url }}">{{ page.title }}</a>
     </li>
 
     {% endfor %}
