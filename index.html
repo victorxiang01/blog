@@ -5,7 +5,7 @@ layout: default
 <ul>
     {% for post in site.pages %}
 
-    <li>{{ post.date | date_to_string }}
+    <li>
         <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
     </li>
 
